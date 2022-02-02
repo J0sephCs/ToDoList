@@ -1,0 +1,123 @@
+:root {
+  --dark: #002855;
+  --darker: #001845;
+  --darkest: #001233;
+  --gray: #7D8597;
+  --light: #0466C8;
+  --blue: 0353A4;
+  --darkerBlue: #023E7D;
+  --color: crimson;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: var(--darkest); 
+  color: white;
+  text-align: center;
+}
+
+
+.todoList{
+  min-width: 30%;
+  list-style: none;
+}
+
+.todo{
+  margin: 1rem;
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: space-between;
+  color:white;
+  background-color: var(--darker);
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.todo li{
+  flex: 1;
+}
+
+h2{
+  padding-top: 30px;
+  color: var(--gray);
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+h1{
+  padding-bottom: 15px;
+  padding-top: 15px;
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: var(--gray);
+}
+
+header , h1 {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+input , button{
+appearance: none;
+border: none;
+outline: none;
+background: none;
+}
+
+.todoInput{
+  background-color: var(--darker);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  flex: 110%;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.todoButton{
+  color: var(--darkerBlue);
+  font-size: 1.25rem;
+  font-weight: 700;
+  background-image: linear-gradient(to right, var(--gray), var(--light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.todoButton:hover{
+  opacity: 0.8;
+}
+ .todoButton:active{
+   opacity: 0.6;
+ }
+
+ .todoContainer {
+   flex: 110%;
+   max-width: 800px;
+   width: 100%;
+   margin: 0 auto;
+ }
+
+ .todoList{
+   padding: 1rem;
+ }
+
+ .deleteButton{
+   background-image: linear-gradient(to right, var(--color), var(--light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.25rem;
+  padding-right: 0.5rem;
+ }
+
+.todoItem{
+  padding: 0.5rem 1rem;
+}
